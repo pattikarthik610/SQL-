@@ -52,6 +52,34 @@ select*from students_mark;
 
 
 
+use tables;
+show tables;
+select id,maths,hindi from students_mark;
+select student_name,gender,contact from students_mark;
+select distinct gender from students_mark;
+select student_name from students_mark
+where gender ="Male"
+;
+select*from students_mark
+where hindi<60;
+select*from students_mark
+where hindi>30 and maths>30;
+select*from students_mark
+order by id desc;
+select*from students_mark
+order by  maths desc;
+select*from students_mark
+where not gender="male"
+order by id desc;
+select*from students_mark
+where not gender="male"
+order by id desc,hindi desc;
+insert into students_mark(id,student_name,gender,maths,hindi,gk,contact) values
+(4,"xyo","male",27,28,38,173456789),
+(5,"aby","female",20,21,36,124756789),
+(6,"ayo","male",22,27,38,173456799),
+(7,"acy","female",29,23,36,124757789);
+select*from students_mark;
 
 
 
